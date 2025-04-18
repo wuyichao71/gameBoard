@@ -44,18 +44,10 @@ body {
 .u-flex {
   display: flex;
   flex-direction: row;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
-.u-small-item {
-  border: 1px solid black;
+.u-subContainer {
   flex-grow: 1;
-  text-align: center;
-}
-/* h4 {
-  font-weight: normal;
-} */
-.u-large-item {
-  border: 1px solid red;
-  flex-grow: 1;
-  text-align: center;
+  flex-basis: 0;
+  /* border: 1px solid black; */
 }
