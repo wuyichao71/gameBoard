@@ -15,16 +15,7 @@ body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
 }
-img {
-  margin-left: -100px;
-}
-.imgDiv {
-  border-radius: 50%;
-  width: 500px;
-  height: 500px;
-  overflow: hidden;
-  display: inline-block;
-}
+
 .u-textCenter {
   text-align: center;
 }
@@ -39,3 +30,13 @@ img {
   padding: var(--s) var(--m);
   background-color: var(--primary);
 }
+
+.avatar {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 50%;
+  aspect-ratio: 1;
+}
+/* .avatarContainer {
+
+} */
