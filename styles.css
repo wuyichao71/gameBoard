@@ -41,13 +41,21 @@ body {
 .avatarContainer {
   padding: 0 35%;
 }
-.flexContainer {
+.u-flex {
   display: flex;
   flex-direction: row;
   border: 1px solid green;
 }
-.flexItem {
+.u-small-item {
   border: 1px solid black;
+  flex-grow: 1;
   text-align: center;
-  margin: 0 var(--l);
+}
+/* h4 {
+  font-weight: normal;
+} */
+.u-large-item {
+  border: 1px solid red;
+  flex-grow: 1;
+  text-align: center;
 }
