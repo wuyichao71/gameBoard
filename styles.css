@@ -42,6 +42,9 @@ body {
    * the content on the page isn't larger than 960px and
    * this div is centered if the browser is larger tahn 960px.
    */
+  max-width: 960px;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .avatarContainer {
@@ -66,15 +69,19 @@ body {
   /* TODO: Change the size and weight of the font so it feels
    * important!
    */
+  font-size: 75px;
+  font-weight: bolder;
 }
 
 .line {
   /* TODO: Change the color of the line so that it's less weighty */
+  color: #fff;
 }
 
 .subContainer {
   flex-grow: 1;
   flex-basis: 0;
+  /* border: 1px solid black; */
 }
 
 .subContainer + .subContainer {
@@ -82,10 +89,14 @@ body {
    * subContainers...
    * https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_combinator
    */
+  font-weight: normal;
+  margin: 0 0 0 5%;
 }
 
 .subTitle {
   /* TODO: Change the size and weight of the font so it feels
    * important! Optionally add some margin.
    */
+  font-size: 20px;
+  font-weight: bolder;
 }
