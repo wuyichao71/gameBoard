@@ -15,6 +15,9 @@ body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
 }
+img {
+  border-radius: 50px;
+}
 .u-textCenter {
   text-align: center;
 }
