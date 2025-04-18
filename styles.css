@@ -13,8 +13,12 @@ body {
   text-align: center;
 }
 .navTitle {
-  color: var(--primary);
+  color: var(--white);
   font-size: 20px;
-  /* margin: 0;
-  font-weight: normal; */
+  margin: 0;
+  font-weight: normal;
+}
+
+.navContainer {
+  background-color: var(--primary);
 }
