@@ -16,7 +16,14 @@ body {
   margin: 0;
 }
 img {
-  border-radius: 50px;
+  margin-left: -100px;
+}
+.imgDiv {
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  display: inline-block;
 }
 .u-textCenter {
   text-align: center;
