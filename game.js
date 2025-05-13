@@ -16,9 +16,9 @@ const main = (currentTime) => {
 window.requestAnimationFrame(main);
 
 const update = () => {
-    snake_update();
+    updateSnake();
 }
 
 const draw = () => {
-    snake_draw();
+    drawSnake();
 }

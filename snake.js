@@ -1,32 +1,30 @@
 
-const SNAKE_SPEED = 2;
+const SNAKE_SPEED = 5;
 
-const snake = [
+const snakeBody = [
     {x: 11, y: 11},
     {x: 11, y: 10},
     {x: 11, y: 9}    
 ];
 
-const snake_update = () => {
-    for (let i = snake.length - 2; i >= 0; i--) {
-        snake[i + 1] = {...snake[i]};
+const updateSnake = () => {
+    for (let i = snakeBody.length - 2; i >= 0; i--) {
+        snakeBody[i + 1] = {...snakeBody[i]};
     }
 
     const snakeDirection = getInputDirection();
-    snake[0].x += snakeDirection.x;
-    snake[0].y += snakeDirection.y;
-    // snake[0].x += 1;
-    // snake[0].y += -1;
+    snakeBody[0].x += snakeDirection.x;
+    snakeBody[0].y += snakeDirection.y;
 }
 
-const snake_draw = () => {
+const drawSnake = () => {
     let gameBoard = document.getElementById('game-board');
     gameBoard.innerHTML = '';
-    for (let i = 0; i < snake.length; i++) {
+    for (let i = 0; i < snakeBody.length; i++) {
         let snakeElement = document.createElement('div');
         snakeElement.classList.add('snake');
-        snakeElement.style.gridColumnStart = snake[i].x;
-        snakeElement.style.gridRowStart = snake[i].y;
+        snakeElement.style.gridColumnStart = snakeBody[i].x;
+        snakeElement.style.gridRowStart = snakeBody[i].y;
         gameBoard.appendChild(snakeElement);
     }
 }
