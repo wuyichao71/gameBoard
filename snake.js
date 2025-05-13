@@ -1,3 +1,4 @@
+
 const SNAKE_SPEED = 2;
 
 const snake = [
@@ -10,8 +11,12 @@ const snake_update = () => {
     for (let i = snake.length - 2; i >= 0; i--) {
         snake[i + 1] = {...snake[i]};
     }
-    snake[0].x += 0;
-    snake[0].y += 1;
+
+    const snakeDirection = getInputDirection();
+    snake[0].x += snakeDirection.x;
+    snake[0].y += snakeDirection.y;
+    // snake[0].x += 1;
+    // snake[0].y += -1;
 }
 
 const snake_draw = () => {
