@@ -1,5 +1,4 @@
 let renderTime = 0;
-let SNAKE_SPEED = 2;
 
 const main = (currentTime) => {
     window.requestAnimationFrame(main);
@@ -8,7 +7,7 @@ const main = (currentTime) => {
         return;
     }
     renderTime = currentTime;
-    console.log(currentTime);
+    // console.log(currentTime);
     update();
     draw();
 }
@@ -17,12 +16,9 @@ const main = (currentTime) => {
 window.requestAnimationFrame(main);
 
 const update = () => {
+    snake_update();
 }
 
 const draw = () => {
-    let board = document.getElementById('game-board');
-    board.innerHTML = "";
-    let aDiv = document.createElement('div');
-    aDiv.style.background = 'red';
-    board.appendChild(aDiv);
+    snake_draw();
 }
