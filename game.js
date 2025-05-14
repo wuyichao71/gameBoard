@@ -31,11 +31,17 @@ const showGameOver = () => {
 
 // setInterval(main);
 const startGame = () => {
+    initialGameBoard();
     initialSnake();
     initialFood();
     initialInputDirection();
     initialGameOver();
     window.requestAnimationFrame(main);
+}
+
+const initialGameBoard = () => {
+    gameBoard.className = "";
+    gameBoard.classList.add("game-board");
 }
 
 const update = () => {
