@@ -13,6 +13,24 @@ window.addEventListener("keydown", (event) => {
     }
 })
 
+window.addEventListener("click", event => {
+    const centerX = window.innerWidth / 2;
+    const centerY = window.innerHeight / 2;
+    if (lastInputDirection.x !== 0) {
+        if (event.y > centerY) {
+            inputDirection = {x: 0, y: 1};
+        } else {
+            inputDirection = {x: 0, y: -1};
+        }
+    } else if (lastInputDirection.y != 0) {
+        if (event.x < centerX) {
+            inputDirection = {x: -1, y: 0};
+        } else {
+            inputDirection = {x: 1, y: 0};
+        }
+    }
+})
+
 const getInputDirection = () => {
     lastInputDirection = inputDirection;
     return inputDirection;
