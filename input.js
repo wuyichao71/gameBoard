@@ -17,3 +17,7 @@ const getInputDirection = () => {
     lastInputDirection = inputDirection;
     return inputDirection;
 }
+
+const initialInputDirection = () => {
+    inputDirection = {x: 0, y: 1};
+}

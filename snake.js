@@ -1,11 +1,18 @@
 
-const SNAKE_SPEED = 2;
+const SNAKE_SPEED = 4;
 
-const snakeBody = [
-    {x: 11, y: 11},
-    {x: 11, y: 10},
-    {x: 11, y: 9}    
-];
+let snakeBody = [];
+    // {x: 11, y: 11},
+    // {x: 11, y: 11 - 1},
+    // {x: 11, y: 11 - 2}
+// ];
+
+const initialSnake = () => {
+    snakeBody = [];
+    for (let i = 0; i < 3; i++) {
+        snakeBody.push({x: colCenter, y: rowCenter - i});
+    }
+}
 
 const updateSnake = () => {
     for (let i = snakeBody.length - 2; i >= 0; i--) {
@@ -18,8 +25,8 @@ const updateSnake = () => {
 }
 
 const drawSnake = () => {
-    let gameBoard = document.getElementById('game-board');
-    gameBoard.innerHTML = '';
+    // let gameBoard = document.getElementById('game-board');
+    // gameBoard.innerHTML = '';
     for (let i = 0; i < snakeBody.length; i++) {
         let snakeElement = document.createElement('div');
         snakeElement.classList.add('snake');
@@ -27,4 +34,27 @@ const drawSnake = () => {
         snakeElement.style.gridRowStart = snakeBody[i].y;
         gameBoard.appendChild(snakeElement);
     }
+}
+
+const onSnake = (position, snakeStart = 0) => {
+    for (let i = snakeStart; i < snakeBody.length; i++) {
+        if (equalPosition(position, snakeBody[i])) {
+            return true;
+        }
+    }
+    return false;
+}
+
+const increaseSnake = (incr) => {
+    for (let i = 0; i < incr; i++) {
+        snakeBody.push({...snakeBody[snakeBody.length - 1]});
+    }
+}
+
+const isSnakeOutOfBound = () => {
+    return outOfBound(snakeBody[0]);
+}
+
+const isSnakeOnSelf = () => {
+    return onSnake(snakeBody[0], 1);
 }
