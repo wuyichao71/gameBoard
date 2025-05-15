@@ -16,6 +16,14 @@
   <body>
     <div id="game-board" class="game-board"></div>
     <botton class="botton" onclick="startGame()">Start!</botton>
+    <!-- <div></div> -->
+    <!-- <div id="show-pos" width="200pt" height="200pt"></div> -->
+    <div id="control" class="control-board">
+      <botton id="up" class="control-botton" style="grid-column: 2; grid-row: 1" onclick="upDirection()">▲</botton>
+      <botton id="right" class="control-botton" style="grid-column: 3; grid-row: 2" onclick="rightDirection()">▶</botton>
+      <botton id="down" class="control-botton" style="grid-column: 2; grid-row: 3" onclick="downDirection()">▼</botton>
+      <botton id="left" class="control-botton" style="grid-column: 1; grid-row: 2" onclick="leftDirection()">◀</botton>
+    </div>
     
   </body>
 </html>

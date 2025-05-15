@@ -11,8 +11,8 @@ body {
 
 .game-board {
   background-color: black;
-  width: 85vmin;
-  height: 85vmin;
+  width: 65vmin;
+  height: 65vmin;
   display: grid;
   grid-template-rows: repeat(21, 1fr);
   grid-template-columns: repeat(21, 1fr);
@@ -21,8 +21,8 @@ body {
 
 .end-game-board {
   background-color: black;
-  width: 85vmin;
-  height: 85vmin;
+  width: 65vmin;
+  height: 65vmin;
   color: white;
   /* text-align: center; */
   align-items: center;
@@ -50,13 +50,37 @@ body {
 } */
 
 .botton {
-  margin: 1.5vh auto;
+  margin: 1vmin auto;
+  width: auto;
+  height: auto;
   color: #000;
   background-color: #949494;
-  border: 1pt solid black;
+  border: 0.2vmin solid black;
   border-radius: 2pt;
+  font-size: 2vmin;
   /* background-image: -webkit-linear-gradient(top,#dd4b39,#d14836);
   background-image: linear-gradient(top,#dd4b39,#d14836); */
   cursor: pointer;
   /* -webkit-tap-highlight-color: transparent; */
+}
+
+.control-board {
+  /* background-color: white; */
+  width: 25vmin;
+  height: 25vmin;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.control-botton {
+  color: #000;
+  background-color: #949494;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  font-size: xx-large;
+  cursor: pointer;
 }
