@@ -89,10 +89,7 @@ body {
   aspect-ratio: 1;
 }
 
-.open-sans-font {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
+.triangles {
+  font-family: "Segoe UI Symbol", "Arial Unicode MS", monospace;
 }
+
