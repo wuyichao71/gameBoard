@@ -71,6 +71,7 @@ body {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
+  aspect-ratio: 1;
 }
 
 .control-botton {
@@ -83,4 +84,5 @@ body {
   display: flex;
   font-size: xx-large;
   cursor: pointer;
+  aspect-ratio: 1;
 }
