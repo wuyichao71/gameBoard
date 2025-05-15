@@ -28,7 +28,7 @@ body {
   color: white;
   /* text-align: center; */
   align-items: center;
-  font-size: x-large;
+  font-size: 5vmin;
   justify-content: center;
   display: flex;
 }
