@@ -1,29 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link rel="stylesheet" href="style.css" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Snake</title>
-    <script src="grid.js"></script>
-    <script src="input.js"></script>
-    <script src="snake.js"></script>
-    <script src="food.js"></script>
-    <script src="value.js" defer></script>
-    <script src="game.js" defer></script>
-  </head>
-  <body>
-    <div id="game-board" class="game-board"></div>
-    <botton class="botton" onclick="startGame()">Start!</botton>
-    <!-- <div></div> -->
-    <!-- <div id="show-pos" width="200pt" height="200pt"></div> -->
-    <div id="control" class="control-board">
-      <botton id="up" class="control-botton triangle" style="grid-column: 2; grid-row: 1" onclick="upDirection()">▲</botton>
-      <botton id="right" class="control-botton triangle" style="grid-column: 3; grid-row: 2" onclick="rightDirection()">▶&#xFE0E;</botton>
-      <botton id="down" class="control-botton triangle" style="grid-column: 2; grid-row: 3" onclick="downDirection()">▼</botton>
-      <botton id="left" class="control-botton triangle" style="grid-column: 1; grid-row: 2" onclick="leftDirection()">◀&#xFE0E;</botton>
-    </div>
-    
-  </body>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>
+            Game Board
+        </title>
+    </head>
+    <body>
+        <h1>Game Board</h1>
+        <div class="game-board">
+            <div class="game-unit build" onclick="location.href='./snake/index.html'">
+                snake
+            </div>
+            <div class="game-unit unbuild">
+                To be continued
+            </div>
+        </div>
+
+    </body>
 </html>

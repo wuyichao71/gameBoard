@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Snake</title>
+    <script src="js/grid.js"></script>
+    <script src="js/input.js"></script>
+    <script src="js/snake.js"></script>
+    <script src="js/food.js"></script>
+    <script src="js/value.js" defer></script>
+    <script src="js/game.js" defer></script>
+  </head>
+  <body>
+    <div id="game-board" class="game-board"></div>
+    <table>
+      <tr>
+        <td>
+          <botton class="botton" onclick="startGame()">Start!</botton>
+        </td>
+        <td>
+          <botton class="botton" onclick="location.href='../index.html'">back</botton>
+        </td>
+        
+      </tr>
+      
+    </table>
+    <!-- <botton class="botton" onclick="startGame()">Start!</botton> -->
+    <!-- <div></div> -->
+    <!-- <div id="show-pos" width="200pt" height="200pt"></div> -->
+    <div id="control" class="control-board">
+      <botton id="up" class="control-botton triangle" style="grid-column: 2; grid-row: 1" onclick="upDirection()">▲</botton>
+      <botton id="right" class="control-botton triangle" style="grid-column: 3; grid-row: 2" onclick="rightDirection()">▶&#xFE0E;</botton>
+      <botton id="down" class="control-botton triangle" style="grid-column: 2; grid-row: 3" onclick="downDirection()">▼</botton>
+      <botton id="left" class="control-botton triangle" style="grid-column: 1; grid-row: 2" onclick="leftDirection()">◀&#xFE0E;</botton>
+    </div>
+    
+  </body>
+</html>
